@@ -15,10 +15,7 @@ app.use(cors({
 }));
 
 app.get("/", (req, res) => {
-  res.status(200).json({
-    success: true,
-    message: 'Api is Working'
-  });
+  res.send('Api is Working');
 });
 app.use("/api/auth", authRouter);
 
